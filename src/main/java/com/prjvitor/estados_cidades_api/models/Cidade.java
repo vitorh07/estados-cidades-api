@@ -1,5 +1,7 @@
 package com.prjvitor.estados_cidades_api.models;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -24,6 +26,7 @@ public class Cidade {
 
     @ManyToOne
     @JoinColumn(name = "estado_id")
+    @JsonBackReference
     private Estado estado;
 }
 
