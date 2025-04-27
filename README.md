@@ -38,10 +38,16 @@ cd estados-cidades-api
 
 ## 🧪 Endpoints
 
-- GET /api/estados – Lista todos os estados com suas respectivas cidades.
-- GET /api/cidades – Lista todas as cidades (opcional, se implementado).
+- **Estados**
+  - `GET /api/estados` – Lista todos os estados com suas respectivas cidades.
+  - `GET /api/estados/{id}` – Retorna os detalhes de um estado específico pelo ID.
+
+- **Cidades**
+  - `GET /api/cidades` – Lista todas as cidades.
+  - `GET /api/cidades/{id}` – Retorna os detalhes de uma cidade específica pelo ID.
 
 ## 🧙‍♂️ Exemplo de JSON
+- Exemplo 1:
 ```url
 http://localhost:8080/api/estados
 ```
@@ -64,6 +70,16 @@ http://localhost:8080/api/estados
     ]
   }
 ]
+```
+- Exemplo 2:
+```url
+http://localhost:8080/api/cidades/5395
+```
+```json
+{
+  "id": 5395,
+  "nome": "Sorocaba"
+}
 ```
 
 
