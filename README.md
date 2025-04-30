@@ -4,6 +4,10 @@ Uma API desenvolvida para listar estados e suas respectivas cidades do Brasil. I
 
 ---
 
+## JSON (Cidades e Estados)
+
+O [JSON](https://gist.github.com/letanure/3012978) foi pego pronto no Github, onde está disponível no perfil do [Lenature](https://github.com/letanure).
+
 ## 🔥 Funcionalidades
 
 - 📋 Listagem de estados
